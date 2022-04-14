@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Salom</h1>
+
+    {% for element in elements %}
+      <h1>{{element.id}} . {{element.title}}</h1>
+      <p>{{element.body}}</p>
+      <span>{{element.date}}</span>
+      <hr>
+    {% endfor %}
+
+    <a href="{% url 'api' %}">api</a>
+  </body>
+</html>
